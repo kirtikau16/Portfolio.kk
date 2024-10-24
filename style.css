@@ -155,11 +155,13 @@ h1 {
 
 @media (min-width: 300px) and (max-width: 700px) {
   .container {
-    max-width: auto;
+    max-width: 90%;
     margin: auto;
+    margin-top: 40px;
   }
 
   .header {
+    width: 90%;
     padding: 5px 5px;
   }
   .logo a {
@@ -200,6 +202,22 @@ h1 {
     width: 250px;
     height: 150px;
     margin: 10px auto;
+  }
+
+  .card-front h1{
+    font-size: 15px;
+  }
+
+  .card-front p{
+    font-size: 11px;
+  }
+
+  .card-back{
+    font-size: 10px;
+  }
+
+  h1{
+    font-size: 20px;
   }
 }
 
