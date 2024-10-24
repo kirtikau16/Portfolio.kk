@@ -83,6 +83,7 @@ html {
   text-align: center;
 color: black;
   padding-top: 70px;
+  padding-bottom: 10px;
 }
 
 .project {
@@ -455,7 +456,7 @@ button .span-mother2 span:nth-child(6) {
   }
 
   .dis {
-    line-height: 1;
+    line-height: 1.5;
   }
 
   .dis h3 {
@@ -470,8 +471,10 @@ button .span-mother2 span:nth-child(6) {
     height: 150px;
   }
 
-  #h1{
-    padding-top: 40px;
+  .heading-section{
+    font-size: 1.5rem;
+    padding-top: 10px;
+    margin-top: 10px;
   }
 
 .card{
@@ -480,12 +483,16 @@ button .span-mother2 span:nth-child(6) {
     margin: 10px auto;
   }
 
+  .card-front{
+    border: 5px solid burlywood;
+  }
+
   .card-front h1{
     font-size: 15px;
   }
 
   .card-front p{
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .card-back{
@@ -510,6 +517,10 @@ button .span-mother2 span:nth-child(6) {
     width: 400px;
   }
 
+  #contact-section{
+    padding-bottom: 10px;
+  }
+
   .form-container .form .input{
     margin-bottom: 10px;
     padding: 0px;
@@ -531,12 +542,20 @@ button .span-mother2 span:nth-child(6) {
 }
 
 @media (min-width: 800px) and (max-width: 1200px) {
+
+  .dis{
+    padding-top: 100px;
+  }
+
   .illu img {
     height: 250px;
   }
 
-  .icon{
-    height: 10px;
-    width: 10px;
-  }
+  .heading-section{
+    font-size: 2.5rem;
+  }  
+
+  
+
+
 }
