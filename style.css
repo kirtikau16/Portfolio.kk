@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: auto;
+  margin-top: 75px;
+  max-width: 80%;
+  border-radius:0 0 10px 10px;
+  height: max-content;
+  background: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 40px;
+  border-radius:6px 6px 0 0;
+  background-color: bisque;
+  position: fixed; /* Makes the header fixed at the top */
+  width: 80%;     /* Ensures the header takes full width */
+  top: 0;          /* Positions the header at the top */
+  z-index: 1000;
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: Brush Script MT, cursive;
+  font-size: 45px;
+  font-weight: 700;
+  color: black;
+}
+
+.nav-bar {
+  margin: 18px 0 18px auto;
+}
+
+.nav-bar a {
+  padding: 0 10px;
+  text-decoration: none;
+  font-family: Georgia;
+  font-weight: 600;
+  color: black;
+}
+
+.home {
+  display: flex;
+  margin-bottom: 85px;
+  margin-top: 70px;
+}
+
+.dis {
+  margin: auto;
+  line-height: 1.5;
+}
+
+.dis h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.dis h1 {
+  font-size: 5rem;
+  color: rgb(1, 137, 137);
+}
+
+.illu {
+  margin: auto;
+}
+
+.moving-line {
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center;
+  margin: 5px 10px;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* From Uiverse.io by vamsidevendrakumar */ 
+.card {
+  width: 360px;
+  height: 260px;
+  perspective: 1000px;
+  margin:15px auto;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front h1,p{
+  margin: auto;
+  line-height: 1.5;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: burlywood;
+  color: black;
+  /* display: flex; */
+  align-items: center;
+  border: 10px solid burlywood;
+  border-radius: 10px;
+  justify-content: center;
+  /* font-size: 24px; */
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background-color: brown;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: 10px solid brown;
+  border-radius: 10px;
+  justify-content: center;
+  padding:15px;
+  line-height: 1.5;
+  /* font-size: 24px; */
+  transform: rotateY(180deg);
+}
+
+.card-back a{
+  /* padding:15px; */
+  color: rgb(164, 229, 245);
+}
+
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .container {
+    max-width: auto;
+    margin: auto;
+  }
+
+  .header {
+    padding: 5px 5px;
+  }
+  .logo a {
+    font-size: 25px;
+  }
+
+  .nav-bar {
+    margin: 6px 0px 6px auto;
+  }
+
+  .nav-bar a {
+    padding: 3px;
+    font-size: 10px;
+  }
+
+  .home {
+    margin: 5px 5px;
+    /* margin: auto; */
+  }
+
+  .dis {
+    line-height: 1;
+  }
+
+  .dis h3 {
+    font-size: 1rem;
+  }
+
+  .dis h1 {
+    font-size: 1.5rem;
+  }
+
+  .illu img {
+    height: 150px;
+  }
+
+.card{
+    width: 250px;
+    height: 150px;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .illu img {
+    height: 250px;
+  }
+}
